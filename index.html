@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divyanshi — Digital E-Portfolio &amp; Educator Profile</title>
+  <meta name="description" content="Professional academic portfolio of Divyanshi, Social Science educator specializing in Revised Bloom's Taxonomy, digital classroom tools, and child-centered instruction.">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar bg-glass" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        Divyanshi<span class="logo-dot"></span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#research" class="nav-link">Research &amp; Projects</a>
+        <a href="#certificates" class="nav-link">Credential Vault</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle light and dark mode">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" style="display: none;">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <div class="hero-badge-row hero-badge-container">
+            <span class="hero-pulse-dot"></span>
+            <span class="hero-tagline">Social Science Educator &amp; Researcher</span>
+          </div>
+          <h1 class="hero-title">
+            Inspiring minds through <span class="italic text-gradient">purposeful teaching</span> &amp; digital learning.
+          </h1>
+          <p class="hero-description">
+            I am a B.A. B.Ed. scholar at Lovely Professional University. I design inclusive, technology-driven classrooms combining Social Science pedagogy, Revised Bloom's Taxonomy, and interactive learning tools.
+          </p>
+          <div class="hero-chips">
+            <span class="hero-chip"><i class="fa-solid fa-chalkboard-user"></i> Social Science Pedagogy</span>
+            <span class="hero-chip"><i class="fa-solid fa-laptop-code"></i> ICT &amp; STEM Tools</span>
+            <span class="hero-chip"><i class="fa-solid fa-school"></i> Classroom Management</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Let's Connect</a>
+            <a href="#experience" class="btn btn-secondary">Explore Work Experience</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="profile-card bg-glass">
+            <div class="profile-frame">
+              <div class="profile-inner">
+                <img src="profile.jpeg" alt="Divyanshi Portrait" class="profile-image" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; document.getElementById('heroAvatar').style.display='block';">
+                <!-- Sleek Teacher Vector Avatar -->
+                <svg id="heroAvatar" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                  <defs>
+                    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#818cf8" />
+                      <stop offset="100%" stop-color="#34d399" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="100" cy="100" r="90" fill="url(#avatarGrad)" opacity="0.15" />
+                  <circle cx="100" cy="100" r="80" fill="url(#avatarGrad)" opacity="0.25" />
+                  <!-- Hair Back -->
+                  <path d="M60 100C60 70 80 50 100 50C120 50 140 70 140 100V120H60V100Z" fill="#1e1b4b"/>
+                  <!-- Shoulders -->
+                  <path d="M45 180C45 150 70 135 100 135C130 135 155 150 155 180V190H45V180Z" fill="#4f46e5" />
+                  <!-- Neck -->
+                  <rect x="90" y="115" width="20" height="25" fill="#fbcfe8" rx="4" />
+                  <!-- Face -->
+                  <circle cx="100" cy="95" r="32" fill="#fbcfe8" />
+                  <!-- Glasses -->
+                  <rect x="78" y="88" width="18" height="12" rx="3" fill="none" stroke="#1e1b4b" stroke-width="2.5"/>
+                  <rect x="104" y="88" width="18" height="12" rx="3" fill="none" stroke="#1e1b4b" stroke-width="2.5"/>
+                  <line x1="96" y1="94" x2="104" y2="94" stroke="#1e1b4b" stroke-width="2.5"/>
+                  <!-- Hair Front -->
+                  <path d="M68 95C68 70 80 62 100 62C120 62 132 70 132 95C132 75 120 70 100 70C80 70 68 75 68 95Z" fill="#1e1b4b"/>
+                  <!-- Smile -->
+                  <path d="M92 108C92 112 108 112 108 108" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="profile-name">Divyanshi</h3>
+            <span class="profile-title">B.A. B.Ed. Educator</span>
+            
+            <div class="profile-stats">
+              <div class="stat-item">
+                <span class="stat-label">Location</span>
+                <span class="stat-value">Mathura, UP</span>
+                <span class="stat-sub">India</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Academics</span>
+                <span class="stat-value">7.94 CGPA</span>
+                <span class="stat-sub">LPU Phagwara</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & PHILOSOPHY -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Who I Am</span>
+          <h2 class="section-title">About &amp; Educational Philosophy</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-content">
+            <p>
+              I believe that education should be active, inquiry-based, and student-centered. Social Science is not just about memorizing dates and facts; it is about cultivating global citizenship, historical empathy, and critical geographical thinking in young learners.
+            </p>
+            <p>
+              My goal is to create inclusive, digital-friendly classrooms where students are encouraged to collaborate, question, and apply their learning to local and global contexts using standard pedagogical structures and frameworks.
+            </p>
+            <div class="philosophy-card bg-glass">
+              <i class="fa-solid fa-quote-right quote-icon"></i>
+              <p class="philosophy-text">
+                "To contribute to students' academic and holistic development by delivering engaging, curriculum-based Social Science instruction and fostering a positive, organized, and learner-centered classroom environment."
+              </p>
+            </div>
+          </div>
+          
+          <div class="skills-column">
+            <h3 class="sub-section-title"><i class="fa-solid fa-sliders"></i> Core Skill Areas</h3>
+            <div class="skills-grid">
+              
+              <div class="skill-category-card bg-glass">
+                <div class="skill-header">
+                  <i class="fa-solid fa-book-open"></i>
+                  <h4>Curriculum &amp; Lesson Planning</h4>
+                </div>
+                <p class="skill-desc">Revised Bloom's Taxonomy, Micro-Teaching &amp; Demonstration Lessons.</p>
+              </div>
+
+              <div class="skill-category-card bg-glass">
+                <div class="skill-header">
+                  <i class="fa-solid fa-chart-simple"></i>
+                  <h4>Student Assessment &amp; Evaluation</h4>
+                </div>
+                <p class="skill-desc">Instructional design, Rubrics, Marking schemes, Peer &amp; Self-Assessment.</p>
+              </div>
+
+              <div class="skill-category-card bg-glass">
+                <div class="skill-header">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <h4>Tools &amp; Techniques</h4>
+                </div>
+                <p class="skill-desc">ICT, STEM integration, E-learning platforms (Kahoot, Padlet, Canva, Quizizz).</p>
+              </div>
+
+              <div class="skill-category-card bg-glass">
+                <div class="skill-header">
+                  <i class="fa-solid fa-users-rays"></i>
+                  <h4>Soft Skills &amp; Communication</h4>
+                </div>
+                <p class="skill-desc">Time Management, Team Collaboration, Leadership, Adaptability.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL TIMELINE -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">My Journey</span>
+          <h2 class="section-title">Teaching Internships</h2>
+        </div>
+        
+        <div class="timeline">
+          
+          <!-- Internship 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content-card bg-glass">
+              <div class="timeline-header-row">
+                <div>
+                  <h3 class="timeline-role">Social Science Teacher Intern</h3>
+                  <p class="timeline-org">BKJ Apple Orchard School, Phagwara</p>
+                </div>
+                <span class="timeline-date">May 2026</span>
+              </div>
+              <p class="timeline-objective">
+                <strong>Objective:</strong> To contribute to academic and holistic growth by providing learner-centered, curriculum-driven Social Science lessons.
+              </p>
+              <ul class="timeline-outcomes">
+                <li>Assisted in planning and developing interactive lesson plans aligned with curriculum standards while supporting classroom instruction.</li>
+                <li>Contributed to effective classroom management by maintaining discipline and encouraging active participation.</li>
+                <li>Gained practical experience in student assessment, co-curricular planning, and pedagogical skills under the guidance of experienced mentors.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Internship 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content-card bg-glass">
+              <div class="timeline-header-row">
+                <div>
+                  <h3 class="timeline-role">Social Science Teacher Intern</h3>
+                  <p class="timeline-org">Divine Public School, Phagwara</p>
+                </div>
+                <span class="timeline-date">May 2025</span>
+              </div>
+              <p class="timeline-objective">
+                <strong>Objective:</strong> To deliver interactive and engaging Social Science instruction to middle school learners.
+              </p>
+              <ul class="timeline-outcomes">
+                <li>Observed and analyzed senior educators' instructional strategies to strengthen Social Science lesson delivery for Grades 6–9.</li>
+                <li>Engaged directly with middle school students to identify learning challenges and adapted methodologies to improve comprehension.</li>
+                <li>Developed instructional skills by fostering structured, inclusive, and positive classrooms that support student learning.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Academic Records</span>
+          <h2 class="section-title">Education &amp; Qualifications</h2>
+        </div>
+        
+        <div class="education-grid">
+          
+          <!-- LPU -->
+          <div class="education-card bg-glass">
+            <div class="edu-icon-box">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <span class="edu-duration">Aug 2023 – Present</span>
+            <h3 class="edu-degree">Bachelor of Arts &amp; Education</h3>
+            <p class="edu-school">Lovely Professional University, Phagwara, Punjab</p>
+            <span class="edu-grade">CGPA: 7.94</span>
+          </div>
+
+          <!-- Senior Secondary -->
+          <div class="education-card bg-glass">
+            <div class="edu-icon-box">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <span class="edu-duration">Jun 2021 – Apr 2023</span>
+            <h3 class="edu-degree">Senior Secondary Education</h3>
+            <p class="edu-school">Shriji Baba Saraswati Vidya Mandir, Mathura, UP</p>
+            <span class="edu-grade">Percentage: 71.4%</span>
+          </div>
+
+          <!-- Secondary -->
+          <div class="education-card bg-glass">
+            <div class="edu-icon-box">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <span class="edu-duration">Apr 2020 – Mar 2021</span>
+            <h3 class="edu-degree">Secondary Education</h3>
+            <p class="edu-school">Amar Nath Vidya Ashram School, Mathura, UP</p>
+            <span class="edu-grade">Percentage: 65.2%</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH & PROJECTS -->
+    <section class="research-section" id="research">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Academic Works</span>
+          <h2 class="section-title">Research &amp; Co-Curriculars</h2>
+        </div>
+        
+        <div class="research-container">
+          <div class="project-column">
+            
+            <!-- Research Paper -->
+            <div class="project-card bg-glass">
+              <span class="project-tag"><i class="fa-solid fa-book-bookmark"></i> Research Publication</span>
+              <h3 class="project-title">Inclusive education and digital learning through the lens of NEP2020</h3>
+              <p class="project-desc">
+                An LPU academic publication examining pedagogical adaptations, digital literacy frameworks, and the integration of inclusive teaching methods as recommended by the National Education Policy (NEP) 2020.
+              </p>
+              <div class="activity-org"><i class="fa-solid fa-building"></i> Lovely Professional University · May 2025</div>
+            </div>
+
+            <!-- Community Project -->
+            <div class="project-card bg-glass">
+              <span class="project-tag"><i class="fa-solid fa-hands-holding-child"></i> Community Development</span>
+              <h3 class="project-title">Community Development Project</h3>
+              <p class="project-desc">
+                Active social development and literacy campaign in local neighborhoods during a two-month summer placement.
+              </p>
+              <ul class="project-list">
+                <li><i class="fa-solid fa-check"></i> Facilitated literacy and numeracy sessions for underprivileged kids.</li>
+                <li><i class="fa-solid fa-check"></i> Organized environment drives, cleanups, and tree plantations.</li>
+                <li><i class="fa-solid fa-check"></i> Provided mentorship to build confidence and learning mindsets.</li>
+              </ul>
+              <div class="activity-org"><i class="fa-solid fa-calendar"></i> Jun 2024 – Jul 2024</div>
+            </div>
+
+          </div>
+          
+          <div class="project-column">
+            
+            <!-- Co-Curricular Cards -->
+            <div class="co-extra-card bg-glass">
+              <h3 class="sub-section-title"><i class="fa-solid fa-award"></i> Co-Curricular Activities</h3>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div>
+                    <div class="activity-name">National Conference on Liberal &amp; Creative Arts</div>
+                    <div class="activity-org">LPU Phagwara</div>
+                  </div>
+                  <span class="activity-date">Aug 2025</span>
+                </div>
+                <div class="activity-item">
+                  <div>
+                    <div class="activity-name">Educational Visit to Jang-e-Azadi</div>
+                    <div class="activity-org">Jalandhar Memorial Site</div>
+                  </div>
+                  <span class="activity-date">Oct 2023</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Extra-Curricular Cards -->
+            <div class="co-extra-card bg-glass" style="margin-top: 1rem;">
+              <h3 class="sub-section-title"><i class="fa-solid fa-masks-theater"></i> Extra-Curricular Activities</h3>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div>
+                    <div class="activity-name">Poster Making Competition</div>
+                    <div class="activity-org">Division of Student Welfare (DSW), LPU</div>
+                  </div>
+                  <span class="activity-date">Nov 2025</span>
+                </div>
+                <div class="activity-item">
+                  <div>
+                    <div class="activity-name">Workshop on Social Media</div>
+                    <div class="activity-org">Department of Education (DOE), LPU</div>
+                  </div>
+                  <span class="activity-date">Sep 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Languages Card -->
+            <div class="co-extra-card bg-glass" style="margin-top: 1rem;">
+              <h3 class="sub-section-title"><i class="fa-solid fa-language"></i> Languages</h3>
+              <div class="hero-chips" style="margin-bottom: 0;">
+                <span class="hero-chip" style="background: rgba(99, 102, 241, 0.05); border-color: rgba(99, 102, 241, 0.2); color: var(--primary-accent);">English (Professional)</span>
+                <span class="hero-chip" style="background: rgba(13, 148, 136, 0.05); border-color: rgba(13, 148, 136, 0.2); color: var(--secondary-accent);">Hindi (Native)</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CREDENTIAL VAULT -->
+    <section class="certificates-section" id="certificates">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Credentials</span>
+          <h2 class="section-title">Interactive Certificate Vault</h2>
+        </div>
+        
+        <div class="vault-layout">
+          <div class="vault-display">
+            <div class="vault-card bg-glass" id="activeCertCard" style="cursor: pointer;">
+              <img id="activeCertImg" src="cert3.jpg" alt="Certificate Preview" style="width: 100%; height: 100%; object-fit: contain;">
+              <span class="vault-watermark">VERIFIED</span>
+              <div class="vault-card-inner" id="certFallback" style="display: none;">
+                <div class="vault-badge-icon" id="certIcon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3 class="vault-cert-title" id="certTitle">English Language for competitive Exams</h3>
+                <p class="vault-cert-issuer" id="certIssuer">National Programme on Technology Enhanced Learning (NPTEL)</p>
+                <div class="vault-cert-verify">
+                  <i class="fa-solid fa-shield-halved"></i> Officially Verified Credential
+                </div>
+              </div>
+            </div>
+            
+            <div class="vault-controls">
+              <button class="control-btn" id="prevCertBtn" aria-label="Previous Certificate">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <span class="vault-counter" id="certCounter">1 of 4</span>
+              <button class="control-btn" id="nextCertBtn" aria-label="Next Certificate">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="vault-list-container">
+            <div class="vault-list" id="certList">
+              <!-- Item 1 (Active) -->
+              <div class="vault-item active" data-index="0" data-title="English Language for competitive Exams" data-issuer="National Programme on Technology Enhanced Learning (NPTEL) · Apr 2025" data-icon="fa-graduation-cap" data-image="cert3.jpg">
+                <span class="vault-item-num">01</span>
+                <div class="vault-item-info">
+                  <h4>English Language for competitive Exams</h4>
+                  <p>NPTEL | Apr 2025</p>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="vault-item" data-index="1" data-title="Archaeology and Epigraphy" data-issuer="Lovely Professional University (LPU) · Apr 2024" data-icon="fa-landmark" data-image="cert1.jpg">
+                <span class="vault-item-num">02</span>
+                <div class="vault-item-info">
+                  <h4>Archaeology and Epigraphy</h4>
+                  <p>LPU | Apr 2024</p>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="vault-item" data-index="2" data-title="Excavation, Cultural Heritage &amp; Digital Archaeology" data-issuer="Lovely Professional University (LPU) · Feb 2024" data-icon="fa-compass-drafting" data-image="cert4.png">
+                <span class="vault-item-num">03</span>
+                <div class="vault-item-info">
+                  <h4>Excavation &amp; Digital Archaeology</h4>
+                  <p>LPU | Feb 2024</p>
+                </div>
+              </div>
+              <!-- Item 4 -->
+              <div class="vault-item" data-index="3" data-title="Critical understanding of Educational Technology" data-issuer="EDUTECH · Aug 2023" data-icon="fa-laptop-code" data-image="cert2.jpg">
+                <span class="vault-item-num">04</span>
+                <div class="vault-item-info">
+                  <h4>Critical understanding of Educational Technology</h4>
+                  <p>EDUTECH | Aug 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACK RATING SECTION -->
+    <section class="rating-section">
+      <div class="container">
+        <div class="rating-card bg-glass">
+          <span class="section-badge">Feedback</span>
+          <h3>Rate Your Experience</h3>
+          <p style="color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.9rem;">
+            Your feedback helps me improve classroom methodologies. Let me know your thoughts!
+          </p>
+          <div class="rating-stars" id="ratingStars">
+            <i class="fa-solid fa-star rating-star" data-val="1"></i>
+            <i class="fa-solid fa-star rating-star" data-val="2"></i>
+            <i class="fa-solid fa-star rating-star" data-val="3"></i>
+            <i class="fa-solid fa-star rating-star" data-val="4"></i>
+            <i class="fa-solid fa-star rating-star" data-val="5"></i>
+          </div>
+          <textarea class="rating-textarea" id="ratingComment" rows="3" placeholder="Leave a review or comment..."></textarea>
+          <button class="btn btn-primary" id="submitFeedbackBtn">Submit Review</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Connect &amp; Collaborate</h2>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p class="contact-intro">
+              I am open to discussions on modern pedagogy, educational technology, curriculum designs, and teaching internship opportunities.
+            </p>
+            <div class="contact-details">
+              
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-meta">
+                  <span>Email Address</span>
+                  <a href="mailto:div272004@gmail.com">div272004@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-meta">
+                  <span>Phone Number</span>
+                  <a href="tel:+918755306691">+91 87553 06691</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="contact-meta">
+                  <span>LinkedIn Profile</span>
+                  <a href="https://linkedin.com/in/divyanshi-rajput2004" target="_blank" rel="noopener noreferrer">linkedin.com/in/divyanshi-rajput2004</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <form class="contact-form bg-glass" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="formName" class="form-input" placeholder=" " required>
+              <label for="formName" class="form-label">Full Name</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="formEmail" class="form-input" placeholder=" " required>
+              <label for="formEmail" class="form-label">Email Address</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="text" id="formSubject" class="form-input" placeholder=" ">
+              <label for="formSubject" class="form-label">Subject</label>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="formMessage" class="form-input form-textarea" placeholder=" " required></textarea>
+              <label for="formMessage" class="form-label">Your Message</label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="justify-content: center;">Send Message</button>
+            <div class="form-success-msg" id="contactSuccessMsg" style="display: none;">
+              <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="currentYear"></span> Divyanshi. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/divyanshi-rajput2004" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:div272004@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Certificate Lightbox Modal -->
+  <div id="certModal" class="cert-modal">
+    <span class="close-cert-modal" id="closeCertModal">&times;</span>
+    <div class="cert-modal-content">
+      <img id="certModalImg" src="" alt="Certificate Preview">
+      <div id="certModalCaption" class="cert-modal-caption"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
